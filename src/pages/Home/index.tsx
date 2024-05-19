@@ -3,6 +3,7 @@ import HighlightSpan from '../../assets/components/HiglightSpan'
 import GitHubStats from '../../assets/components/GithubStats'
 import Section from '../../layout/Section'
 import { useTranslation } from 'react-i18next'
+import GlassButton from '../../assets/components/GlassButton'
 
 function Home() {
   const { t } = useTranslation('home')
@@ -40,8 +41,11 @@ function Home() {
         </div>
         <div
           style={{ backgroundImage: `url(${heroImage})` }}
-          className="z-auto w-full h-96 bg-cover bg-right-bottom rounded-lg bg-fixed drop-shadow-xl border border-gray-100 backdrop-blur-sm"
-        ></div>
+          className="relative z-0 w-full h-96 bg-cover bg-right-bottom rounded-lg bg-fixed shadow-xl border border-gray-100 flex items-end justify-end p-5 space-x-4"
+        >
+          <GlassButton anchor="#work">💼 Explore my work</GlassButton>
+          <GlassButton anchor="#contact">☎️ Get in touch !</GlassButton>
+        </div>
       </Section>
       <Section>
         <GitHubStats />

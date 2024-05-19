@@ -23,7 +23,7 @@ function Header() {
           </a>
           <LanguageSelector
             optionClasses=""
-            className="rounded pl-2 border border-slate-500 bg-transparent backdrop-blur-2xl drop-shadow-sm text-sm font-light "
+            className="rounded pl-2 border border-slate-500 bg-transparent backdrop-blur-2xl shadow-sm text-sm font-light "
           ></LanguageSelector>
         </nav>
       </div>
