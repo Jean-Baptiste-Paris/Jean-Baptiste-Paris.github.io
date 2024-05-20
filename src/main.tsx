@@ -9,7 +9,7 @@ import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Jean-Baptiste-Paris.github.io/">
       <Header />
       <main className="max-w-screen-xl px-8">
         <Router />

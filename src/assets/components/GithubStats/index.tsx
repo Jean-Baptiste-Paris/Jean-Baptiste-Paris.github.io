@@ -27,7 +27,6 @@ const GitHubStats = () => {
       try {
         const username = 'Jean-Baptiste-Paris'
         const token = import.meta.env.VITE_GITHUB_TOKEN
-        console.log(token)
         const [userData, eventsData] = await Promise.all([
           axios.get(`https://api.github.com/users/${username}`, {
             headers: {
@@ -99,7 +98,7 @@ const GitHubStats = () => {
 
   return (
     <div>
-      <h3 className="pb-3 italic">{t('stats.title')}</h3>
+      <h2 className="pb-3 italic">// {t('stats.title')}</h2>
       <div className="flex justify-between">
         <div className="text-left flex-1 border-l border-slate-700 pl-3">
           <p className="text-5xl font-bold">{stats.repos}</p>

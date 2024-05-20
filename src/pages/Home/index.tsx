@@ -26,9 +26,7 @@ function Home() {
       {t('hero.subMessage')}
     </div>
   )
-  const heroImage = '/pictures/mymind-tZCrFpSNiIQ-unsplash.jpg'
-
-  //Stats Section
+  const heroImage = './pictures/mymind-tZCrFpSNiIQ-unsplash.jpg'
 
   return (
     <div>
@@ -50,23 +48,21 @@ function Home() {
       <Section>
         <GitHubStats />
       </Section>
-      <Section>
-        <h2 className="text-4xl font-bold">🙋🏻 A propos de moi</h2>
-        <p>
-          Je suis Jean-Baptiste Paris, développeur web chez ACCK, l'agence web
-          qui accompagne les associations et entrepreneur·ses engagé·es. Bientôt
-          titulaire d'un diplôme de développeur intégrateur web de niveau Bac+2
-          avec OpenClassrooms, je suis passionné par le développement front et
-          back, allant du design UI aux problèmes algorithmiques.
-        </p>
-        <p>
-          Ce portfolio est le reflet de mon savoir-faire, mettant en avant mes
-          réalisations et mes compétences techniques. Son objectif principal est
-          de vous démontrer mes compétences et ma curiosité pour le
-          développement, dans le but, je l'espère, de recontrer de
-          nouveautrouver une nouvelle opportunité professionnelle pour janvier
-          2025.
-        </p>
+      <Section
+        anchor="about"
+        className="w-screen my-6 relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-black"
+      >
+        <div className="max-w-screen-xl px-8 pb-6 m-auto text-white">
+          <h2 className="italic pb-4">// A propos de moi</h2>
+          <p className="text-2xl font-semibold font-display w-3/4">
+            Je suis Jean-Baptiste Paris, développeur web chez ACCK. Bientôt
+            diplômé en développement web au niveau Bac+2 avec OpenClassrooms, je
+            suis passionné par le développement front et back-end ainsi que par
+            le design UI. Ce portfolio met en avant mes réalisations et
+            compétences techniques pour démontrer mon expertise et ma passion
+            pour le développement.
+          </p>
+        </div>
       </Section>
       <Section anchor="skills">
         <p className="italic font-bold text-center border-y-2 border-slate-700 py-8">

@@ -1,5 +1,5 @@
 function Section({
-  className,
+  className = '',
   anchor,
   children,
 }: {
@@ -7,7 +7,7 @@ function Section({
   anchor?: string
   children?: React.ReactNode
 }) {
-  const classes: string = 'py-10 space-y-6 ' + className
+  const classes: string = 'py-10 space-y-6' + (className ? ' ' + className : '')
   return (
     <section className={classes}>
       <a className="block relative invisible -top-20" id={anchor}></a>
