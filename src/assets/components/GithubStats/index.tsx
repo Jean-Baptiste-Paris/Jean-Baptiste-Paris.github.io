@@ -89,11 +89,19 @@ const GitHubStats = () => {
   }
 
   if (loading) {
-    return <div>Loading...</div>
+    return (
+      <div>
+        <h2 className="pb-3 italic">// {t('stats.title')}</h2>Loading...
+      </div>
+    )
   }
 
   if (error) {
-    return <div>Error : {error}</div>
+    return (
+      <div>
+        <h2 className="pb-3 italic">// {t('stats.title')}</h2>Error : {error}
+      </div>
+    )
   }
 
   return (
@@ -102,21 +110,29 @@ const GitHubStats = () => {
       <div className="flex justify-between">
         <div className="text-left flex-1 border-l border-slate-700 pl-3">
           <p className="text-5xl font-bold">{stats.repos}</p>
-          <p className="text-lg font-light">{t('stats.repos')}</p>
+          <p className="text-lg font-light text-slate-900">
+            {t('stats.repos')}
+          </p>
         </div>
         <div className="text-left flex-1 border-l border-slate-700 pl-3">
           <p className="text-5xl font-bold">{stats.commits}</p>
-          <p className="text-lg font-light">{t('stats.commits')}</p>
+          <p className="text-lg font-light text-slate-900">
+            {t('stats.commits')}
+          </p>
         </div>
         <div className="text-left flex-1 border-l border-slate-700 pl-3">
-          <p className="text-5xl font-bold">{stats.recentCommits}</p>
+          <p className="text-5xl font-bold text-slate-900">
+            {stats.recentCommits}
+          </p>
           <p className="text-lg font-light">
             {t('stats.commitsLastSixtyDays')}
           </p>
         </div>
         <div className="text-left flex-1 border-l border-slate-700 pl-3">
           <p className="text-lg font-light">{t('stats.signedUp')}</p>
-          <p className="text-5xl font-bold">{stats.signUpDate}</p>
+          <p className="text-5xl font-bold text-slate-900">
+            {stats.signUpDate}
+          </p>
         </div>
       </div>
     </div>

@@ -50,7 +50,7 @@ function Home() {
       </Section>
       <Section
         anchor="about"
-        className="w-screen my-6 relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-black"
+        className="w-screen my-10 relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-slate-800"
       >
         <div className="max-w-screen-xl px-8 pb-6 m-auto text-white">
           <h2 className="italic pb-4">// A propos de moi</h2>
