@@ -27,6 +27,8 @@ const GitHubStats = () => {
       try {
         const username = 'Jean-Baptiste-Paris'
         const token = import.meta.env.VITE_GITHUB_TOKEN
+        console.log(import.meta.env)
+
         const [userData, eventsData] = await Promise.all([
           axios.get(`https://api.github.com/users/${username}`, {
             headers: {

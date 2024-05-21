@@ -1,9 +1,12 @@
 import HeroMessage from '../../assets/components/HeroMessage'
 import HighlightSpan from '../../assets/components/HiglightSpan'
-import GitHubStats from '../../assets/components/GithubStats'
+// import GitHubStats from '../../assets/components/GithubStats'
 import Section from '../../layout/Section'
 import { useTranslation } from 'react-i18next'
 import GlassButton from '../../assets/components/GlassButton'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
 
 function Home() {
   const { t } = useTranslation('home')
@@ -45,9 +48,9 @@ function Home() {
           <GlassButton anchor="#contact">☎️ Get in touch !</GlassButton>
         </div>
       </Section>
-      <Section>
+      {/* <Section>
         <GitHubStats />
-      </Section>
+      </Section> */}
       <Section
         anchor="about"
         className="w-screen my-10 relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-slate-800"
@@ -95,22 +98,43 @@ function Home() {
         </div>
       </Section>
       <Section anchor="contact">
+        <h2 className="italic">// Contact</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-4">
-            <h2 className="text-4xl font-bold">Intéressé par mon profil ?</h2>
-            <p>
-              N'hésitez pas à me contacter pour échanger avec moi ou juste me
-              passer le bonjour 👋
-              <br />
-              Je serai ravi d'échanger avec vous !
-            </p>
-            {/* <Réseaux /> */}
-          </div>
-          {/* <ContactForm/> */}
           <div className="h-80 border-2 border-slate-400">
             <div className="h-60 w-100 bg-slate-400"></div>
             <p className="p-4">CONTACT FORM</p>
           </div>
+          <div className="flex flex-col justify-between">
+            <div className="text-xl">
+              <p>Passez moi le bonjour 👋</p>
+
+              <a></a>
+            </div>
+            <div>
+              <p>Ou retrouvez moi sur mes réseaux</p>
+              <div className="flex gap-2">
+                <Link
+                  target="_blank"
+                  to="https://www.linkedin.com/in/jeanbaptiste-paris/"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedinIn}
+                    className="border-2 rounded-full p-2"
+                  />
+                </Link>
+                <Link
+                  target="_blank"
+                  to="https://github.com/Jean-Baptiste-Paris"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="border-2 rounded-full p-2"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* <ContactForm/> */}
         </div>
       </Section>
     </div>
