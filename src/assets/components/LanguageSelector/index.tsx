@@ -22,7 +22,7 @@ function LanguageSelector({
 
   return (
     <select
-      className={className + 'cursor-pointer'}
+      className={className + ' cursor-pointer'}
       onChange={handleLanguageChange}
       defaultValue={i18n.language}
     >
