@@ -1,6 +1,7 @@
 import HeroMessage from '../../assets/components/HeroMessage'
 import HighlightSpan from '../../assets/components/HiglightSpan'
 // import GitHubStats from '../../assets/components/GithubStats'
+import GitHubStats_static from '../../assets/components/GithubStats/static'
 import Section from '../../layout/Section'
 import { useTranslation } from 'react-i18next'
 import GlassButton from '../../assets/components/GlassButton'
@@ -51,20 +52,30 @@ function Home() {
       {/* <Section>
         <GitHubStats />
       </Section> */}
+      <Section>
+        <GitHubStats_static />
+      </Section>
       <Section
         anchor="about"
         className="w-screen my-10 relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-slate-800"
       >
         <div className="max-w-screen-xl px-8 pb-6 m-auto text-white">
           <h2 className="italic pb-4">// A propos de moi</h2>
-          <p className="text-2xl font-semibold font-display w-3/4">
-            Je suis Jean-Baptiste Paris, développeur web chez ACCK. Bientôt
-            diplômé en développement web au niveau Bac+2 avec OpenClassrooms, je
-            suis passionné par le développement front et back-end ainsi que par
-            le design UI. Ce portfolio met en avant mes réalisations et
-            compétences techniques pour démontrer mon expertise et ma passion
-            pour le développement.
-          </p>
+          <div className="flex justify-between">
+            <img
+              className="md:w-1/4 md:order-1 rounded-full"
+              src="pictures/1666088585825.jpg"
+              alt="Jean-Baptiste Paris"
+            />
+            <p className="text-lg md:text-2xl md:font-semibold font-display md:w-3/4 max-sm:px-8">
+              Je suis Jean-Baptiste Paris, développeur web chez ACCK. Bientôt
+              diplômé en développement web au niveau Bac+2 avec OpenClassrooms,
+              je suis passionné par le développement front et back-end ainsi que
+              par le design UI. Ce portfolio met en avant mes réalisations et
+              compétences techniques pour démontrer mon expertise et ma passion
+              pour le développement.
+            </p>
+          </div>
         </div>
       </Section>
       <Section anchor="skills">

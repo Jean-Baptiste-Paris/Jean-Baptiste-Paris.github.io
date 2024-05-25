@@ -10,6 +10,7 @@
     "repos": "Dépôts GitHub",
     "commits": "Commits totaux dont...",
     "commitsLastSixtyDays": "Commits depuis 60 jours",
-    "signedUp": "Inscrit depuis"
+    "signedUp": "Inscrit depuis",
+    "staticSignUpDate": "Mars 2023"
   }
 }

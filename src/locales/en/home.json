@@ -10,6 +10,7 @@
     "repos": "GitHub repositories",
     "commits": "Total commits including...",
     "commitsLastSixtyDays": "Commits the last 60 days",
-    "signedUp": "Signed up since"
+    "signedUp": "Signed up since",
+    "staticSignUpDate": "March 2023"
   }
 }
