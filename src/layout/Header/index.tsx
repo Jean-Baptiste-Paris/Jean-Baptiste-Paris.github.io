@@ -1,36 +1,15 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import LanguageSelector from '../../assets/components/LanguageSelector'
-// import { useState, useEffect, useRef } from 'react'
+import '../../utils/headerLogic'
 
 function Header() {
   const { t } = useTranslation('common')
-  // const [isOverDarkSection, setIsOverDarkSection] = useState(false)
-  // const darkSectionRef = useRef(null)
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       setIsOverDarkSection(entry.isIntersecting)
-  //     },
-  //     {
-  //       threshold: 0.1, // Ajustez ce seuil selon vos besoins
-  //     }
-  //   )
-
-  //   if (darkSectionRef.current) {
-  //     observer.observe(darkSectionRef.current)
-  //   }
-
-  //   return () => {
-  //     if (darkSectionRef.current) {
-  //       observer.unobserve(darkSectionRef.current)
-  //     }
-  //   }
-  // }, [])
-
   return (
-    <header className="w-full p-4 flex justify-center sticky top-0 backdrop-blur-xl sticky:bg-white/30 z-50">
+    <header
+      className="w-full p-4 flex justify-center sticky top-0 backdrop-blur-xl sticky:bg-white/30 z-50 transition-all duration-300"
+      id="header"
+    >
       <div className="w-full max-w-screen-xl px-8 flex items-center justify-between">
         <Link to="/">
           <h1 className="text-2xl font-bold">
