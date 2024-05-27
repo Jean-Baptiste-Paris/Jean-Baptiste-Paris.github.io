@@ -59,22 +59,22 @@ function Home() {
         anchor="about"
         className="dark-section w-screen my-10 relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-slate-800"
       >
-        <div className="max-w-screen-xl px-8 pb-6 m-auto text-white">
-          <h2 className="italic pb-4">// A propos de moi</h2>
-          <div className="flex justify-between">
-            <img
-              className="md:w-1/4 md:order-1 rounded-full"
-              src="pictures/1666088585825.jpg"
-              alt="Jean-Baptiste Paris"
-            />
-            <p className="text-lg md:text-2xl md:font-semibold font-display md:w-3/4 max-sm:px-8">
-              Je suis Jean-Baptiste Paris, développeur web chez ACCK. Bientôt
-              diplômé en développement web au niveau Bac+2 avec OpenClassrooms,
-              je suis passionné par le développement front et back-end ainsi que
-              par le design UI. Ce portfolio met en avant mes réalisations et
-              compétences techniques pour démontrer mon expertise et ma passion
-              pour le développement.
-            </p>
+        <div className="max-w-screen-xl px-10 lg:px-8 pb-6 m-auto text-white">
+          <div className="flex justify-between flex-col md:flex-row md:items-center">
+            <div className="h-full md:w-1/4 md:order-1 flex items-center justify-center pb-5 md:pb-0 place-self-center">
+              <img
+                className="rounded-full text-center self-center h-auto max-h-60 object-cover aspect-square shadow-2xl hover:animate-spin-slow"
+                src="pictures/1666088585825.jpg"
+                alt="Jean-Baptiste Paris"
+              />
+            </div>
+            <div className="md:w-3/4 px-8 md:px-0 md:pr-10 lg:pr-40">
+              <h2 className="italic pb-4">// {t('about.title')}</h2>
+
+              <p className="text-lg md:text-xl lg:text-2xl md:font-semibold font-display">
+                {t('about.aboutMe')}
+              </p>
+            </div>
           </div>
         </div>
       </Section>

@@ -6,7 +6,11 @@ export default {
       sans: ['"Source Sans 3"', 'ui-sans-serif', 'system-ui'],
       display: ['Roboto', 'ui-sans-serif', 'system-ui'],
     },
-    extend: {},
+    extend: {
+      animation: {
+        'spin-slow': 'spin 10s linear forwards',
+      },
+    },
   },
   plugins: [],
 }

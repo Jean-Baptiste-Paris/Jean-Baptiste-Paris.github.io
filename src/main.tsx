@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <main className="max-w-screen-xl px-8">
+      <main className="max-w-screen-xl px-8 duration-300">
         <Router />
       </main>
       <Footer />
