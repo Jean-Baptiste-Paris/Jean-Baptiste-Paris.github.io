@@ -7,7 +7,9 @@ import { useTranslation } from 'react-i18next'
 import GlassButton from '../../assets/components/GlassButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faCode, faPalette, faServer } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
+import IconGroup from '../../assets/components/IconGroup'
 
 function Home() {
   const { t } = useTranslation('home')
@@ -79,9 +81,110 @@ function Home() {
         </div>
       </Section>
       <Section anchor="skills">
-        <p className="italic font-bold text-center border-y-2 border-slate-700 py-8">
-          Bandeau d'icône de compétences
-        </p>
+        <h2 className="italic">// {t('skills.title')}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 md:px-0">
+          <IconGroup
+            icon={faCode}
+            iconClassName="text-2xl text-white bg-slate-800 shadow-md"
+            title={t('skills.front')}
+            titleClassName="font-light uppercase font-display"
+          >
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos/JavaScript-logo.png"
+              alt="Javascript"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\Typescript_logo_2020.svg.png"
+              alt="Typecript"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\React-icon.svg.png"
+              alt="React"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\Vitejs-logo.svg.png"
+              alt="Vite"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\Tailwind_CSS_Logo.svg.png"
+              alt="Tailwind"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\Bootstrap_logo.svg.png"
+              alt="Bootstrap"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\1280px-Sass_Logo_Color.svg.png"
+              alt="Sass"
+            ></img>
+          </IconGroup>
+          <IconGroup
+            icon={faServer}
+            iconClassName="text-2xl text-white bg-slate-800 shadow-md"
+            title={t('skills.back')}
+            titleClassName="font-light uppercase font-display"
+          >
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\PHP-logo.svg.webp"
+              alt="PHP"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\Node.js_logo_2015.svg.png"
+              alt="NodeJS"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\MySQL.svg.png"
+              alt="MySQL"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\1280px-MongoDB-Logo.svg.png"
+              alt="MongoDB"
+            ></img>
+          </IconGroup>
+          <IconGroup
+            icon={faPalette}
+            iconClassName="text-2xl text-white bg-slate-800 shadow-md"
+            title={t('skills.design')}
+            titleClassName="font-light uppercase font-display"
+          >
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\1667px-Figma-logo.svg.png"
+              alt="Figma"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\canva-logo.webp"
+              alt="Canva"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\Adobe_Photoshop_CC_icon.svg.png"
+              alt="Photoshop"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\Adobe_InDesign_CC_icon.svg.png"
+              alt="InDesign"
+            ></img>
+            <img
+              className="max-h-6 rounded-sm"
+              src="logos\Adobe_Illustrator_CC_icon.svg.png"
+              alt="Illustrator"
+            ></img>
+          </IconGroup>
+        </div>
       </Section>
       <Section anchor="work">
         <h2 className="text-center text-4xl font-bold">
@@ -103,9 +206,17 @@ function Home() {
             <div className="h-60 w-100 bg-slate-400"></div>
             <p className="p-4">Présentation projet</p>
           </div>
+          <div className="h-80 border-2 border-slate-400">
+            <div className="h-60 w-100 bg-slate-400"></div>
+            <p className="p-4">Présentation projet</p>
+          </div>
+          <div className="h-80 border-2 border-slate-400">
+            <div className="h-60 w-100 bg-slate-400"></div>
+            <p className="p-4">Présentation projet</p>
+          </div>
         </div>
         <div className="flex justify-center">
-          <p className="border-purple-500 border-2 p-2">en voir plus (?)</p>
+          <GlassButton>🔎 En voir plus</GlassButton>
         </div>
       </Section>
       <Section anchor="contact">
