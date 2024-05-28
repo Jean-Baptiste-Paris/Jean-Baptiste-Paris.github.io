@@ -10,6 +10,7 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faPalette, faServer } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import IconGroup from '../../assets/components/IconGroup'
+import WorkGallery from '../../assets/components/WorkGallery'
 
 function Home() {
   const { t } = useTranslation('home')
@@ -54,7 +55,7 @@ function Home() {
       {/* <Section>
         <GitHubStats />
       </Section> */}
-      <Section>
+      <Section className="md:pt-3">
         <GitHubStats_static />
       </Section>
       <Section
@@ -80,7 +81,7 @@ function Home() {
           </div>
         </div>
       </Section>
-      <Section anchor="skills">
+      <Section anchor="skills" className="md:pt-3">
         <h2 className="italic">// {t('skills.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 md:px-0">
           <IconGroup
@@ -186,38 +187,17 @@ function Home() {
           </IconGroup>
         </div>
       </Section>
+      <div className="mt-7 w-full border-t border-t-slate-800"></div>
       <Section anchor="work">
-        <h2 className="text-center text-4xl font-bold">
+        <HighlightSpan
+          tagType="div"
+          highlight="projets"
+          classes="text-center text-4xl font-display font-medium uppercase"
+          highlightClasses="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-500"
+        >
           Découvrez mes projets récents
-        </h2>
-        <h3 className="text-center">
-          Explorez mes réaliations d'école et mon travail personnel
-        </h3>
-        {/* <Gallery>
-          <Card />
-          <Card />
-        </Gallery> */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="h-80 border-2 border-slate-400">
-            <div className="h-60 w-100 bg-slate-400"></div>
-            <p className="p-4">Présentation projet</p>
-          </div>
-          <div className="h-80 border-2 border-slate-400">
-            <div className="h-60 w-100 bg-slate-400"></div>
-            <p className="p-4">Présentation projet</p>
-          </div>
-          <div className="h-80 border-2 border-slate-400">
-            <div className="h-60 w-100 bg-slate-400"></div>
-            <p className="p-4">Présentation projet</p>
-          </div>
-          <div className="h-80 border-2 border-slate-400">
-            <div className="h-60 w-100 bg-slate-400"></div>
-            <p className="p-4">Présentation projet</p>
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <GlassButton>🔎 En voir plus</GlassButton>
-        </div>
+        </HighlightSpan>
+        <WorkGallery className="pt-8" />
       </Section>
       <Section anchor="contact">
         <h2 className="italic">// Contact</h2>
@@ -227,11 +207,14 @@ function Home() {
             <p className="p-4">CONTACT FORM</p>
           </div>
           <div className="flex flex-col justify-between">
-            <div className="text-xl">
-              <p>Passez moi le bonjour 👋</p>
-
-              <a></a>
-            </div>
+            <HighlightSpan
+              tagType="div"
+              highlight="bonjour"
+              classes="text-4xl font-display font-medium uppercase"
+              highlightClasses="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-500"
+            >
+              Passez moi le bonjour&nbsp;!
+            </HighlightSpan>
             <div>
               <p>Ou retrouvez moi sur mes réseaux</p>
               <div className="flex gap-2">
