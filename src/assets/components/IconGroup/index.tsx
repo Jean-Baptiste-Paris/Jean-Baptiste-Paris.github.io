@@ -17,15 +17,17 @@ function IconGroup({
   children?: React.ReactNode
 }) {
   return (
-    <div className={`w-full flex items-center space-x-3 ${className}`}>
-      <FontAwesomeIcon
-        icon={icon}
-        className={`rounded flex-shrink-0 aspect-square p-4 ${iconClassName}`}
-      ></FontAwesomeIcon>
-      <div className="flex flex-col space-y-2">
+    <div
+      className={`w-full flex flex-col space-y-3 border-slate-50 border rounded-md p-4 shadow-md backdrop-blur-lg bg-gradient-to-t from-slate-50 bg-opacity-20 ${className}`}
+    >
+      <div className="flex space-x-2 items-end">
+        <FontAwesomeIcon
+          icon={icon}
+          className={`rounded flex-shrink-0 aspect-square ${iconClassName}`}
+        ></FontAwesomeIcon>
         <h3 className={`text-xl ${titleClassName}`}>{title}</h3>
-        <div className="gap-2 flex flex-wrap">{children}</div>
       </div>
+      <div className="gap-2 flex flex-wrap w-full justify-end">{children}</div>
     </div>
   )
 }
