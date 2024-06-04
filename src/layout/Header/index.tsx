@@ -13,12 +13,8 @@ function Header() {
     >
       <div className="w-full max-w-screen-xl px-8 flex items-center justify-between">
         <Link to="/">
-          <h1 className="text-2xl font-bold">
-            Jean-Baptiste
-            <span className="flex md:hidden">
-              <br />
-            </span>
-            Paris
+          <h1 className="max-sm:w-50 pr-4 text-2xl font-bold leading-7">
+            Jean-Baptiste Paris
             <span className="ml-2 pl-2 text-xl font-thin border-l border-slate-500">
               {t('header.portfolio')}
             </span>

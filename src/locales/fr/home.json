@@ -3,7 +3,9 @@
     "mainMessage": "Je suis un développeur web créatif déterminé à donner vie à vos idées grâce au code.",
     "highlight": "développeur web",
     "welcome": "Bienvenue sur mon portfolio.",
-    "subMessage": "Je développe des sites interactifs et user-friendly, et\u00A0j'améliore mes compétences en back-end. Explorez\u00A0mes travaux et contactez-moi !"
+    "subMessage": "Je développe des sites interactifs et user-friendly, et\u00A0j'améliore mes compétences en back-end. Explorez\u00A0mes travaux et contactez-moi !",
+    "workButton": "Découvrez mon travail",
+    "contactButton": "Contactez moi !"
   },
   "stats": {
     "title": "Statistiques GitHub en temps réel",

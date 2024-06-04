@@ -3,6 +3,10 @@ import WorkCard from './WorkCard'
 interface WorkInterface {
   name: string
   image: string
+  subtitle: string
+  date: string
+  description: string
+  technologies: string[]
 }
 
 function WorkGallery({
@@ -17,7 +21,7 @@ function WorkGallery({
       className={`w-full grid grid-cols-1 md:grid-cols-2 gap-8 ${className}`}
     >
       {works.map((work) => {
-        return <WorkCard key={work.name} titre={work.name} image={work.image} />
+        return <WorkCard key={work.name} work={work} />
       })}
     </div>
   )

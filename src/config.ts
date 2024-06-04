@@ -45,10 +45,38 @@ const logos = {
 }
 
 const works = [
-  { name: 'Kasa', image: 'images/captures/kasa-2.png' },
-  { name: 'Mon vieux grimoire', image: 'images/captures/mvg-1.png' },
-  { name: 'Sophie Bluel', image: 'images/captures/sophie-2.png' },
-  { name: 'Booki', image: 'images/captures/booki-1.png' },
+  {
+    name: 'Kasa',
+    image: 'images/captures/kasa-2.png',
+    subtitle: 'OpenClassrooms',
+    date: '',
+    description: '',
+    technologies: [''],
+  },
+  {
+    name: 'Mon vieux grimoire',
+    image: 'images/captures/mvg-1.png',
+    subtitle: 'OpenClassrooms',
+    date: '',
+    description: '',
+    technologies: [''],
+  },
+  {
+    name: 'Sophie Bluel',
+    image: 'images/captures/sophie-2.png',
+    subtitle: 'OpenClassrooms',
+    date: '',
+    description: '',
+    technologies: [''],
+  },
+  {
+    name: 'Booki',
+    image: 'images/captures/booki-1.png',
+    subtitle: 'OpenClassrooms',
+    date: '',
+    description: '',
+    technologies: [''],
+  },
 ]
 
 export { logos, works }

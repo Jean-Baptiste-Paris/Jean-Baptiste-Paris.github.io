@@ -3,7 +3,9 @@
     "mainMessage": "I am a creative web developer comitted to bringing your ideas to life through code.",
     "highlight": "web developer",
     "welcome": "Welcome to my portfolio.",
-    "subMessage": "I focus on developing interactive and user-friendly websites, as well as improving my skills in backend development. Explore my work and get in touch !"
+    "subMessage": "I focus on developing interactive and user-friendly websites, as well as improving my skills in backend development. Explore my work and get in touch !",
+    "workButton": "Explore my work",
+    "contactButton": "Get in touch !"
   },
   "stats": {
     "title": "Live GitHub statistics",

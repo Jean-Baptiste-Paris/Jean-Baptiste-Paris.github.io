@@ -48,11 +48,14 @@ function Home() {
           ></HeroMessage>
         </div>
         <div
+          id="canva"
           style={{ backgroundImage: `url(${heroImage})` }}
           className="relative z-0 w-full h-96 bg-cover bg-right-bottom rounded-lg bg-fixed shadow-xl border border-gray-100 flex items-end justify-end p-5 space-x-4"
         >
-          <GlassButton anchor="#work">💼 Explore my work</GlassButton>
-          <GlassButton anchor="#contact">☎️ Get in touch !</GlassButton>
+          <GlassButton anchor="#work">💼 {t('hero.workButton')}</GlassButton>
+          <GlassButton anchor="#contact">
+            ☎️ {t('hero.contactButton')}
+          </GlassButton>
         </div>
       </Section>
       {/* <Section>
