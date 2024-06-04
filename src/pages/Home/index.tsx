@@ -141,27 +141,27 @@ function Home() {
       <Section anchor="work">
         <HighlightSpan
           tagType="div"
-          highlight="projets"
+          highlight={t('works.highlight')}
           classes="text-center text-4xl font-display font-medium uppercase"
           highlightClasses="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-500"
         >
-          Découvrez mes projets récents
+          {t('works.title')}
         </HighlightSpan>
         <WorkGallery className="pt-8" />
       </Section>
       <Section anchor="contact">
         <h2 className="italic text-lg">// Contact</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ContactForm />
+          <ContactForm className="max-sm:order-1" />
 
           <div className="flex flex-col justify-between">
             <HighlightSpan
               tagType="div"
-              highlight="bonjour"
+              highlight={t('contact.highlight')}
               classes="text-4xl font-display font-medium uppercase"
               highlightClasses="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-500"
             >
-              Passez moi le bonjour&nbsp;!&nbsp;👋
+              {t('contact.header')}
             </HighlightSpan>
           </div>
         </div>

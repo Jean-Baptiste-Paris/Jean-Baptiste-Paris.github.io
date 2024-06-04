@@ -22,5 +22,18 @@
     "front": "Front-end",
     "back": "Back-end",
     "design": "Design"
+  },
+  "works": {
+    "title": "Découvrez mes projets récents",
+    "highlight": "projets"
+  },
+  "contact": {
+    "title": "Contact",
+    "header": "Passez moi le bonjour\u00A0!\u00A0👋",
+    "highlight": "bonjour",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer"
   }
 }

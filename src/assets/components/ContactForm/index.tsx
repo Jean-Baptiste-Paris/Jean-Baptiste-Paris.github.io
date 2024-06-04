@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
-function ContactForm() {
+function ContactForm({ className = '' }: { className?: string }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const { t } = useTranslation('home')
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -20,10 +22,10 @@ function ContactForm() {
     'mt-1 p-2 w-full rounded border border-slate-50 shadow text-em md:text-md bg-white/30 focus:bg-white/80 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 transition-all duration-300 text-slate-500 focus:text-slate-800'
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className={'space-y-4 ' + className}>
       <div>
         <label htmlFor="name" className={labelClasses}>
-          Nom
+          {t('contact.name')}
         </label>
         <input
           type="text"
@@ -36,7 +38,7 @@ function ContactForm() {
       </div>
       <div>
         <label htmlFor="email" className={labelClasses}>
-          Email
+          {t('contact.email')}
         </label>
         <input
           type="email"
@@ -49,7 +51,7 @@ function ContactForm() {
       </div>
       <div>
         <label htmlFor="message" className={labelClasses}>
-          Message
+          {t('contact.message')}
         </label>
         <textarea
           id="message"
@@ -65,7 +67,7 @@ function ContactForm() {
           type="submit"
           className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-medium rounded-md text-white bg-gradient-to-r from-indigo-400 to-fuchsia-500 bg-size-200 bg-pos-0 hover:bg-pos-100 focus:bg-pos-100 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-500"
         >
-          Envoyer
+          {t('contact.send')}
         </button>
       </div>
     </form>

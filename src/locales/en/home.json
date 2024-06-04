@@ -22,5 +22,18 @@
     "front": "Front-end",
     "back": "Back-end",
     "design": "Design"
+  },
+  "works": {
+    "title": "Explore my recent projects",
+    "highlight": "projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "header": "Leave a message and say\u00A0hi\u00A0!\u00A0👋",
+    "highlight": "message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
   }
 }
