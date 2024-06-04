@@ -9,6 +9,7 @@ import { faCode, faPalette, faServer } from '@fortawesome/free-solid-svg-icons'
 import IconGroup from '../../assets/components/IconGroup'
 import WorkGallery from '../../assets/components/WorkGallery'
 import { logos } from '../../config'
+import ContactForm from '../../assets/components/ContactForm'
 
 function Home() {
   const { t } = useTranslation('home')
@@ -151,10 +152,8 @@ function Home() {
       <Section anchor="contact">
         <h2 className="italic text-lg">// Contact</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="h-80 border-2 border-slate-400">
-            <div className="h-60 w-100 bg-slate-400"></div>
-            <p className="p-4">CONTACT FORM</p>
-          </div>
+          <ContactForm />
+
           <div className="flex flex-col justify-between">
             <HighlightSpan
               tagType="div"
@@ -165,7 +164,6 @@ function Home() {
               Passez moi le bonjour&nbsp;!&nbsp;👋
             </HighlightSpan>
           </div>
-          {/* <ContactForm/> */}
         </div>
       </Section>
     </div>
