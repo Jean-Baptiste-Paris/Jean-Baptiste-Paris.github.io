@@ -22,7 +22,7 @@ const logos = {
     nodejs: { src: 'logos/node.png', title: 'NodeJS' },
     mysql: { src: 'logos/mysql.png', title: 'MySQL' },
     mongodb: {
-      src: 'logos/kisspng-mongodb-database-nosql-postgresql-mongo-5b39f9e36b1814.0344731115305261794387.png',
+      src: 'logos/kisspng-mongodb-database.png',
       title: 'MongoDB',
     },
   },
@@ -44,4 +44,11 @@ const logos = {
   },
 }
 
-export { logos }
+const works = [
+  { name: 'Kasa', image: 'images/captures/kasa-2.png' },
+  { name: 'Mon vieux grimoire', image: 'images/captures/mvg-1.png' },
+  { name: 'Sophie Bluel', image: 'images/captures/sophie-2.png' },
+  { name: 'Booki', image: 'images/captures/booki-1.png' },
+]
+
+export { logos, works }

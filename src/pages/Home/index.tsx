@@ -8,7 +8,7 @@ import GlassButton from '../../assets/components/GlassButton'
 import { faCode, faPalette, faServer } from '@fortawesome/free-solid-svg-icons'
 import IconGroup from '../../assets/components/IconGroup'
 import WorkGallery from '../../assets/components/WorkGallery'
-import { logos } from '../../config'
+import { logos, works } from '../../config'
 import ContactForm from '../../assets/components/ContactForm'
 
 function Home() {
@@ -147,7 +147,7 @@ function Home() {
         >
           {t('works.title')}
         </HighlightSpan>
-        <WorkGallery className="pt-8" />
+        <WorkGallery className="pt-8" works={works} />
       </Section>
       <Section anchor="contact">
         <h2 className="italic text-lg">// Contact</h2>
