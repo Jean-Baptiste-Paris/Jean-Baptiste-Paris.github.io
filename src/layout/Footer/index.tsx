@@ -25,16 +25,20 @@ function Footer() {
           />
         </Link>
       </div>
-      <p className="font-thin">
-        {t('footer.by')}
-        <span className="font-semibold"> Jean-Baptiste Paris</span> |{' '}
+      <div className="font-thin flex max-sm:flex-col items-center">
+        <p>
+          {t('footer.by')}
+          <span className="font-semibold"> Jean-Baptiste Paris</span>
+        </p>
+
+        <span className="hidden md:block">&nbsp;|&nbsp;</span>
         <a
-          href=""
+          href="https://github.com/Jean-Baptiste-Paris/Jean-Baptiste-Paris.github.io"
           className="underline underline-offset-4 decoration-purple-400"
         >
           {t('footer.source')}
         </a>
-      </p>
+      </div>
     </footer>
   )
 }

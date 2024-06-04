@@ -13,11 +13,13 @@ function WorkCard({
   return (
     <div
       key={key}
-      className="w-full h-72 rounded-xl border border-slate-50 z-10 bg-cover shadow-lg hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer text-white hover:text-transparent"
+      className="relative w-full h-72 rounded-xl border border-slate-50 z-10 bg-cover shadow-lg cursor-pointer hover:scale-105 transition-all duration-500 ease-out bg-center"
       style={divStyle}
     >
-      <div className="rounded-xl w-full h-full flex items-center justify-center backdrop-blur-sm hover:backdrop-blur-none hover:text-sm">
-        <h3 className="font-bold text-4xl drop-shadow-md">{titre}</h3>
+      <div className="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center transition-all duration-500 hover:opacity-0">
+        <h3 className="font-bold text-4xl text-white drop-shadow-md relative">
+          {titre}
+        </h3>
       </div>
     </div>
   )
