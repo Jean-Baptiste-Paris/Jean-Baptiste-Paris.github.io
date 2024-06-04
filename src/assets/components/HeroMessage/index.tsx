@@ -15,7 +15,7 @@ function HeroMessage({
   }
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-3 max-sm:space-y-14 md:gap-14">
         <div className="col-span-2">{render(mainMessage)}</div>
         {subMessage && (
           <div className="text-lg self-end text-end">{render(subMessage)}</div>
